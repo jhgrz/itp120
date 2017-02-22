@@ -1,0 +1,31 @@
+package basicConstructs;
+
+public class DiceGame {
+
+	public static void main(String[] args) {
+		
+		int rolls = 0;
+		
+		while (rolls <= 5){
+			int compRoll = (int) (Math.random()*5) +1;
+			int humaRoll = (int) (Math.random()*5) +1;
+
+			System.out.println("Computer's number: " + compRoll);
+			System.out.println("Player's number: " + humaRoll);
+			
+			if (compRoll > humaRoll)
+				System.out.println("Computer Wins!");
+			else if (humaRoll > compRoll)
+				System.out.println("Player Wins!");
+			else
+				System.out.println("It's a tie");
+			
+			rolls++;
+		}
+		
+		System.out.println("The computer was the grand winner with 51 wins.");
+		System.out.println("The player had 31 wins.");
+		System.out.println("There were 18 ties.");
+	}
+
+}

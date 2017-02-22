@@ -1,0 +1,32 @@
+/*
+ * Created on this date
+ * Comments example
+ * This is a general multiline comment
+ * Diane Wolff
+ */
+ 
+ // note that the package name is the first line of real code
+package mod1wolffexamples;
+
+/**
+ * 
+ * This is a special type of comment
+ * It is called a JavaDoc
+ * There is a tool for converting all JavaDocs 
+ *       to html documentation automatically
+ * We will discuss this later
+ */
+public class Comments {
+
+    // for a program to be executable, it must have a main method
+    // the method must have the signature below
+	public static void main(String[] args) {
+		// this is a single line comment - comment to the end of the line
+		System.out.println ("Hello! ITP 120 students!!!!!");  // comments can go after code
+		
+		// blank lines are no problem in Java
+		// we indent for better readability
+		// extra white space is allowed
+		 
+	}
+}

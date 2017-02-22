@@ -1,0 +1,22 @@
+package mod1wolffexamples;
+
+public class Ex1Constants {
+
+	public static void main(String[] args) {
+		//constants in Java are written in all caps and have the 
+		//"final" modifer.  Values dcannot change
+		final double TAX_RATE;
+		final int NUM_IN_DOZEN =12;
+		int numDozen = 8;
+		int numEggs = numDozen * NUM_IN_DOZEN;
+		System.out.println("The number of eggs in " + numDozen + " dozen is " + numEggs);
+		
+		TAX_RATE = .055;
+		// try to uncomment the following line.  Note the error.  
+		//Constants cannot be changed once they have a value
+		//TAX_RATE = .065;  cannot change once it has a value
+		
+
+	}
+
+}

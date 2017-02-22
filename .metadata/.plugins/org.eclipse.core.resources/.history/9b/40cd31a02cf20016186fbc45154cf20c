@@ -1,0 +1,25 @@
+package basicConstructs;
+import java.util.Scanner;
+
+public class LargeSmall {
+
+	public static void main(String[] args) {
+		Scanner scan = new Scanner(System.in);
+		int number = 0;
+		String numberCounter = "yes";
+		int numberHigh = 0;
+		int numberLow = 0;
+		
+		while (numberCounter.equalsIgnoreCase("yes")){
+			System.out.println("Please enter an integer number: ");
+			number = scan.nextInt();
+
+			scan.nextLine();
+			System.out.println("More Numbers? (yes or no)");
+			numberCounter = scan.nextLine();
+			
+		}//end while
+
+	}
+	
+}

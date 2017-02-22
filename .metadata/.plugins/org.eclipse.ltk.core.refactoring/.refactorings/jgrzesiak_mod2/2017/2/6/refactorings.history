@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring comment="Rename package &apos;mod2wolffexamplesDecisions.itp120mod2ANSWERS17_18&apos; to &apos;itp120mod2ANSWERS17_18&apos;&#x0A;- Original project: &apos;jgrzesiak_mod2&apos;&#x0A;- Original element: &apos;jgrzesiak_mod2/mod2wolffexamplesDecisions.itp120mod2ANSWERS17_18&apos;&#x0A;- Renamed element: &apos;jgrzesiak_mod2/itp120mod2ANSWERS17_18&apos;&#x0A;- Update references to refactored element&#x0A;- Update textual occurrences in comments and strings" description="Rename package &apos;mod2wolffexamplesDecisions.itp120mod2ANSWERS17_18&apos;" flags="589830" hierarchical="false" id="org.eclipse.jdt.ui.rename.package" input="/&lt;mod2wolffexamplesDecisions.itp120mod2ANSWERS17_18" name="itp120mod2ANSWERS17_18" qualified="false" references="true" stamp="1486568894775" textual="false" version="1.0"/>
+</session>

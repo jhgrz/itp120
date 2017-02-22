@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring comment="Rename package &apos;mod1wolffexamples&apos; to &apos;jgrzesiakmod1&apos;&#x0A;- Original project: &apos;mod1ch1_2&apos;&#x0A;- Original element: &apos;mod1ch1_2/mod1wolffexamples&apos;&#x0A;- Renamed element: &apos;mod1ch1_2/jgrzesiakmod1&apos;&#x0A;- Update references to refactored element&#x0A;- Update textual occurrences in comments and strings" description="Rename package &apos;mod1wolffexamples&apos;" flags="589830" hierarchical="false" id="org.eclipse.jdt.ui.rename.package" input="/&lt;mod1wolffexamples" name="jgrzesiakmod1" qualified="false" references="true" stamp="1484168515377" textual="false" version="1.0"/>
+</session>

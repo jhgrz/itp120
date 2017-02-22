@@ -1,0 +1,44 @@
+package mod2wolffexamplesClasses;
+
+import java.text.NumberFormat;
+
+public class Fruit {
+	NumberFormat money = NumberFormat.getCurrencyInstance();
+	private String type;
+	private int numCalories;
+	private double kgWeight;
+	private double cost;
+	public double costPerKg;
+	public double calPerkg;
+	
+	public Fruit ()
+	{
+	}
+	
+	public Fruit (String t, int n, double k, double c)
+	{
+	type = t;
+	numCalories = n;
+	kgWeight = k;
+	cost = c;
+	}
+	
+	public String toString()
+	{
+	return "A typical " + type + " weighs " + kgWeight + " kilograms, has " 
+			+ numCalories + " and costs " + money.format(cost) + " each \n    The cost per kg is " 
+			+ money.format(costPerkg) + " and the calories per kg is " + calPerkg + " each ";
+	}
+	
+	public costPerKg ()
+	{
+		double costPerKg = cost / kgWeight;
+	}
+	
+	public calPerKg ()
+	{
+		double calPerKg = numCalories / kgWeight;
+	}
+
+	
+}

@@ -1,0 +1,84 @@
+package mod2wolffexamplesClasses;
+
+import java.text.NumberFormat;
+
+public class Payroll {
+	
+	NumberFormat money = NumberFormat.getCurrencyInstance();
+	String name = "";
+	String id = "";
+	double phour;
+	double nhour;
+	double gross;
+	
+	//No Argument Const
+	public Payroll ()
+	{
+	}
+	
+	//Full Const
+	public Payroll (String n, String i, double ph, double nh)
+	{
+		name = n;
+		id = i;
+		ph = phour;
+		nh = nhour;
+	}
+	
+	//Gross Pay Method
+	public void grossPay ()
+	{
+		gross = phour * nhour;
+	}
+	
+	public String toString()
+	{
+		return name + " with an id of " + id + " worked " + nhour 
+				+ " at an hourly rate of " + phour + 
+				" and a gross pay of " + money.format(gross) + "\nGross Pay = " + money.format(gross);
+	}
+
+
+	//Getters and Setters
+	public String getName() {
+		return name;
+	}
+
+	public void setName(String name) {
+		this.name = name;
+	}
+
+	public String getId() {
+		return id;
+	}
+
+	public void setId(String id) {
+		this.id = id;
+	}
+
+	public double getPhour() {
+		return phour;
+	}
+
+	public void setPhour(double phour) {
+		this.phour = phour;
+	}
+
+	public double getNhour() {
+		return nhour;
+	}
+
+	public void setNhour(double nhour) {
+		this.nhour = nhour;
+	}
+
+	public double getGross() {
+		return gross;
+	}
+
+	public void setGross(double gross) {
+		this.gross = gross;
+	}
+	
+	
+}

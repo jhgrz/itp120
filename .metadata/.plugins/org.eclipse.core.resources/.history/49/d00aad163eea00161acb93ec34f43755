@@ -1,0 +1,93 @@
+package mod2wolffexamplesClasses;
+
+import java.text.NumberFormat;
+
+public class Fruit {
+	NumberFormat money = NumberFormat.getCurrencyInstance();
+	private String type;
+	private int numCalories;
+	private double kgWeight;
+	private double cost;
+	public double costPerKg;
+	public double calPerkg;
+	
+	public Fruit ()
+	{
+	}
+	
+	public Fruit (String t, int n, double k, double c)
+	{
+	type = t;
+	numCalories = n;
+	kgWeight = k;
+	cost = c;
+	}
+	
+	public String toString()
+	{
+	return "A typical " + type + " weighs " + kgWeight + " kilograms, has " 
+			+ numCalories + " and costs " + money.format(cost) + " each \n    The cost per kg is " 
+			+ money.format(costPerKg) + " and the calories per kg is " + calPerkg + " each ";
+	}
+	
+	public void costPerKg ()
+	{
+		double costPerKg = cost / kgWeight;
+	}
+	
+	public void calPerKg ()
+	{
+		double calPerKg = numCalories / kgWeight;
+		
+	}
+
+	public String getType() {
+		return type;
+	}
+
+	public void setType(String type) {
+		this.type = type;
+	}
+
+	public int getNumCalories() {
+		return numCalories;
+	}
+
+	public void setNumCalories(int numCalories) {
+		this.numCalories = numCalories;
+	}
+
+	public double getKgWeight() {
+		return kgWeight;
+	}
+
+	public void setKgWeight(double kgWeight) {
+		this.kgWeight = kgWeight;
+	}
+
+	public double getCost() {
+		return cost;
+	}
+
+	public void setCost(double cost) {
+		this.cost = cost;
+	}
+
+	public double getCostPerKg() {
+		return costPerKg;
+	}
+
+	public void setCostPerKg(double costPerKg) {
+		this.costPerKg = costPerKg;
+	}
+
+	public double getCalPerkg() {
+		return calPerkg;
+	}
+
+	public void setCalPerkg(double calPerkg) {
+		this.calPerkg = calPerkg;
+	}
+
+	
+}

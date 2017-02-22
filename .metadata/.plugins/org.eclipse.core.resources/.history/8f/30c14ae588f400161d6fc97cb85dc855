@@ -1,0 +1,59 @@
+package basicConstructs;
+import java.text.NumberFormat;
+
+public class RetailItem {
+
+	private String description;
+	private int unitsOnHand;
+	private double price;
+	
+	//no argument constructor
+	public RetailItem(){
+	}
+	
+	//full constructor
+	public RetailItem(String d, int u, double p){
+		this.description = d;
+		this.unitsOnHand = u;
+		this.price = p;		
+	}
+	
+	//toString
+	public String toString() {
+		NumberFormat nf = NumberFormat.getCurrencyInstance();
+		return ("The inventory currently has " + unitsOnHand + " " + description + 
+				" which costs " + nf.format(price) + " for each unit for a total of " + nf.format(totPrice()));
+	}
+	
+	//calculate totPrice
+	public double totPrice(){
+		return (double) unitsOnHand * price;
+	}
+
+	//Getters and Setters
+	public String getDescription() {
+		return description;
+	}
+
+	public void setDescription(String description) {
+		this.description = description;
+	}
+
+	public int getUnitsOnHand() {
+		return unitsOnHand;
+	}
+
+	public void setUnitsOnHand(int unitsOnHand) {
+		this.unitsOnHand = unitsOnHand;
+	}
+
+	public double getPrice() {
+		return price;
+	}
+
+	public void setPrice(double price) {
+		this.price = price;
+	}
+	
+	
+}

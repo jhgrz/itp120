@@ -1,0 +1,44 @@
+package basicConstructs;
+
+import java.util.Scanner;
+
+public class GuessingGame {
+
+	public static void main(String[] args) {
+		Scanner scan = new Scanner(System.in);
+		int guess = 0;
+		int number = 0;
+		int guessCounter = 0;
+		String more = "yes";
+
+		while (more.equalsIgnoreCase("yes")) {
+			
+			System.out.println("Guess the number (1 - 20): ");
+			guess = scan.nextInt();
+			number = (int) (Math.random() * 20) + 1;
+			
+			//Check if number was high/low
+			while (guess != number){
+				if (guess > number){
+					System.out.println("Your Guess was high. Guess again.");
+					guessCounter++;
+				}
+				else if (guess < number){
+					System.out.println("Your Guess was low. Guess again.");
+					guessCounter++;
+					
+				guess = scan.nextInt();
+				}
+
+			}//Close while
+			
+			System.out.println("You guessed right!  It took you " + guessCounter + " guesses.");
+			System.out.println("Do you want to play again? (yes or no):");
+			more = scan.nextLine();
+			
+		} // Close while
+		
+		
+	}
+
+}

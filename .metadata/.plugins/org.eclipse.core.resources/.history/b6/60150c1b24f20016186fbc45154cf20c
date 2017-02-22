@@ -1,0 +1,41 @@
+package basicConstructs;
+
+public class DiceGame {
+
+	public static void main(String[] args) {
+		
+		int rolls = 0;
+		int compRoll = 0;
+		int humaRoll = 0;
+		int totalcomp = 0;
+		int totalhuma = 0;
+		int totaltie = 0;
+		
+		for (rolls = 0; rolls < 5; rolls++){
+			compRoll = (int) (Math.random()*6) +1;
+			humaRoll = (int) (Math.random()*6) +1;
+
+			System.out.println("Computer's number: " + compRoll);
+			System.out.println("Player's number: " + humaRoll);
+			
+			if (compRoll > humaRoll){
+				System.out.println("Computer Wins!\n");
+				++totalcomp;
+			}
+			else if (humaRoll > compRoll){
+				System.out.println("Player Wins!\n");
+				++totalhuma;
+			}
+			else{
+				System.out.println("It's a tie\n");
+				++totaltie;
+			}
+			
+		}
+		
+		System.out.printf("The computer was the grand winner with %d%n wins." + totalcomp);
+		System.out.printf("The player had %d%n wins." + totalhuma);
+		System.out.printf("There were %d%n ties." + totaltie);
+	}
+
+}

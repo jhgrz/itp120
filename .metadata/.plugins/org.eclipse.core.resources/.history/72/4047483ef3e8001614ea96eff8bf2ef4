@@ -1,0 +1,42 @@
+package mod2wolffexamplesDecisions;
+import java.util.Scanner;
+
+public class BMI {
+
+	public static void main(String[] args) {
+		
+	Scanner scan = new Scanner(System.in);
+	double height;
+	double weight;
+	double bmi;
+	
+	//inputs
+	System.out.println("Please Enter Your Height (in inches):");
+		height = scan.nextInt();
+		
+	System.out.println("Please Enter Your Weight (in pounds):");
+		weight = scan.nextInt();
+		
+	
+	//Calculate BMI	
+	bmi = ((weight / (height * height))*703);
+	
+	System.out.printf("Your BMI is %s", bmi);
+	
+	//If Else
+	if (bmi <= 18.5)
+		System.out.println("%nYou are Underweight, your BMI is less than 18.5");
+		
+	else if (bmi >= 18.6 && bmi <= 24.9)
+		System.out.println("%nYou are Normal, your BMI is between 18.6 and 24.9");
+	
+	else if (bmi >= 25 && bmi <= 29.9)
+		System.out.println("%nYou are Overweight, your BMI is between 25 and 29.9");
+	
+	else if (bmi > 30)
+		System.out.println(%n"You are Obese, your BMI is greater than 30");
+	
+
+	}
+
+}

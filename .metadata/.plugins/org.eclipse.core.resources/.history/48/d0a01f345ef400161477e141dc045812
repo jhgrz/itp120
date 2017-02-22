@@ -1,0 +1,65 @@
+package basicConstructs;
+import java.util.Scanner;
+
+public class RPS {
+
+	public static void main(String[] args) {
+		Scanner scan = new Scanner(System.in);
+		String humaChoice = "";
+		String compChoiceS = "";
+		int compChoice = 0;
+		int gameCounter = 0;
+		int compCounter = 0;
+		int humaCounter = 0;
+		
+		System.out.println("Please enter rock, paper or scissors using only lower case letters:");
+		humaChoice = scan.nextLine();
+		
+		compChoice = (int) (Math.random()*3) +1;
+			if (compChoice < 2)
+				compChoiceS = "rock";
+			else if (compChoice < 3)
+				compChoiceS = "paper";
+			else 
+				compChoiceS = "scissors";
+		
+		System.out.print("The computer's choice was " + compChoiceS);
+		System.out.println("\nThe user's choice was " + humaChoice);
+		
+		
+		//decision who won rock
+		if (humaChoice.equals("rock")){
+			if (compChoiceS.equals("rock"))
+				System.out.println("Its a tie. No one wins!!");
+			else if (compChoiceS.equals("paper"))
+				System.out.println("Paper covers rock.\nThe computer wins!");
+			else 
+				System.out.println("Rock crushes scissors.\nThe user wins!");
+		}//end who won rock
+		
+		//decision who won paper
+		else if (humaChoice.equals("paper")){
+			if (compChoiceS.equalsIgnoreCase("rock"))
+					System.out.println("Paper covers rock.\nThe user wins!");
+			else if (compChoiceS.equals("paper"))
+					System.out.println("Its a tie. No one wins!!");
+			else
+					System.out.println("Scissors cut paper.\nThe computer wins!");
+		}//end who won paper
+		
+		//decision who won scissors
+		else if (humaChoice.equals("scissors")){
+			if (compChoiceS.equals("rock"))
+				System.out.println("Rock crushes scissors.\nThe computer wins!");
+			else if (compChoiceS.equals("paper"))
+				System.out.println("Scissors cut paper.\nThe user wins!");
+			else
+				System.out.println("Its a tie. No one wins!!");
+		}//end who won scissors
+
+		//Increment counter
+		gameCounter ++;
+
+	}
+
+}

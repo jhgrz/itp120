@@ -1,0 +1,28 @@
+package mod2wolffexamplesDecisions;
+import java.util.Scanner;
+
+public class Slots {
+
+	public static void main(String[] args) {
+	Scanner scan = new Scanner(System.in);
+	
+	int x = (int) (Math.random()*9) +1;
+	int y = (int) (Math.random()*9) +1;
+	int z = (int) (Math.random()*9) +1;
+	
+	System.out.printf("Your Randomly Generated Slot Numbers are: %n%15s %5s %5s", x, y, z);
+	
+	if (x == y) {
+		if (y == z)
+			if (z == x)
+			System.out.printf("Hey two numbers matched, so close!");
+	}
+	else
+		
+		System.out.println("YOU WON IT ALL, 3 numbers matched!");
+		
+		
+		
+	}
+
+}

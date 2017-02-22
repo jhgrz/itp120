@@ -1,0 +1,36 @@
+package basicConstructs;
+import java.util.Scanner;
+
+public class RPS {
+
+	public static void main(String[] args) {
+		Scanner scan = new Scanner(System.in);
+		final int rock = 1;
+		final int paper = 2;
+		final int scissors = 3;
+		String humaChoice;
+		String compChoiceS;
+		int compChoice;
+		int gameCounter = 0;
+		
+		System.out.println("Please enter rock, paper or scissors using only lower case letters:");
+		humaChoice = scan.nextLine();
+		
+		compChoice = (int) (Math.random()*3) +1;
+			if (compChoice <= 1)
+				compChoiceS = "rock";
+			else if (compChoice <= 2)
+				compChoiceS = "paper";
+			else 
+				compChoiceS = "scissors";
+		
+		System.out.print("The computer's choice was " + compChoiceS);
+		System.out.println("\nThe user's choice was " + humaChoice);
+		
+		
+		//decision who won
+		//if ()
+
+	}
+
+}

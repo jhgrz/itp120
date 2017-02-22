@@ -1,0 +1,27 @@
+package mod2wolffexamplesClasses;
+
+public class PayrollDriver {
+
+	public static void main(String[] args) {
+
+		Payroll bugs = new Payroll("Bugs Bunny", "01B", 48.00, 40.00);
+		Payroll fud = new Payroll ();
+		
+		fud.setName("Elmer Fudd");
+		fud.setId("02G");
+		fud.setNhour(60.00);
+		fud.setPhour(38);
+		fud.grossPay();
+		
+		bugs.grossPay();
+		
+		
+		System.out.println(bugs.toString());
+		
+		System.out.println(fud.toString());
+		
+		
+
+	}
+
+}
